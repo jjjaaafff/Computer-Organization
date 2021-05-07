@@ -1,0 +1,16 @@
+
+
+D:/quartus/quartus/bin64/project/pipelined_computer/lpm_rom_irom.v
+
+Jun 04 04PM:49:18>: Megafunction LPM_ROM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+D:/quartus/quartus/bin64/project/pipelined_computer/lpm_rom_irom.v
+
+Jun 04 04PM:49:19>: Megafunction LPM_ROM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+D:/quartus/quartus/bin64/project/pipelined_computer/lpm_rom_irom.v
+
+Jun 04 04PM:49:24>: Megafunction LPM_ROM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
