@@ -112,7 +112,7 @@ MIPS是按字节编址的，一个字四字节，因此字的起始地址必须�
 * RISC寻址方式
 
     * R型指令：全部是寄存器操作  
-        ![R type](figure/rcode.png)
+        ![R type](figure/rcode.png)  
         op：指令的基本操作，通常称为操作码(opcode)  
         rs：第一个源操作数寄存器  
         rt：第二个源操作数寄存器  
@@ -127,7 +127,7 @@ MIPS是按字节编址的，一个字四字节，因此字的起始地址必须�
         而第三种情况，是未公布指令但能被CPU识别(一种后门)
 
     * I型指令：两个寄存器操作，且可以带上一个16bit立即数与寄存器一起运算
-        ![I type](figure/lwcode.png)
+        ![I type](figure/lwcode.png)  
         I型后三个位域为立即数的表示，rt是destination  
         由于imm只有十六位，运算时要对其进行符号扩展，十六位扩为三十二位  
         在逻辑运算中(andi)，将imm看成布尔值，无符号的说法，进行零填充扩展  
@@ -136,7 +136,7 @@ MIPS是按字节编址的，一个字四字节，因此字的起始地址必须�
         ![R type](figure/jcode.png)
 
         * jal指令：保存返回地址并跳转 相当于Call  
-            ![jal instruction](figure/jalcode.png)
+            ![jal instruction](figure/jalcode.png)  
             返回地址会被确定地保存到31号寄存器，即$ra  
             存储的是绝对地址(即与载入到内存的地址相关)  
             可能有程序的重定位问题，复制程序会跳转到旧地址  
@@ -144,7 +144,7 @@ MIPS是按字节编址的，一个字四字节，因此字的起始地址必须�
             而相对寻址，是对当前PC做加减操作，例如beq，bne  
         * J指令：无条件跳转，等于go to语句
         * jr指令：跳转到寄存器指定的地址  
-            ![jr instruction](figure/jrcode.png)
+            ![jr instruction](figure/jrcode.png)  
             PC在32位之间任意跳转  
             jr $ra相当于函数的return (在与jal对应在子程序的时候)  
             将寄存器rs中的数据放入PC中
@@ -157,7 +157,7 @@ MIPS是按字节编址的，一个字四字节，因此字的起始地址必须�
     将某位的值置为1，用or结合1片段 set  
     将某位置取反，用xor结合1片段。自己和自己异或，将寄存器清零  
     * 逻辑移位
-    ![Logic shift](figure/logiccode.png)
+    ![Logic shift](figure/logiccode.png)  
     左移位数sa由5位零扩展为32位
       * 逻辑运算中，左移低位填零，右移高位填零
       * 算术运算中，左右移时都要保持最高符号位不变
